@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guide"
+    android:background="@drawable/guide_gradient">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/dark_green"
+        app:cardElevation="10dp"
+        android:id="@+id/guideCardView"
+
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/myConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/commonName"
+                android:layout_width="187dp"
+                android:layout_height="19dp"
+                android:gravity="center"
+                android:text="Sothern Ground Hornbill"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/scientificName"
+                android:layout_width="187dp"
+                android:layout_height="19dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Bucorvus leadbeateri"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/commonName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/identificationCardview"
+        app:layout_constraintTop_toBottomOf="@id/guideCardView"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/identificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/orderHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/orderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/orderHeading"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/famComHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family Common Name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/orderText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/famComText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/famComHeading"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/famSciHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Family Scientific Name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/famComText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/famSciText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/famSciHeading"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="5dp" />
+
+            <FrameLayout
+                android:id="@+id/fl_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="-8dp"
+                tools:layout_editor_absoluteY="-320dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identificationCardview">
+
+        <Button
+           android:id="@+id/addObsGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/btnshape"
+            android:drawableRight="@drawable/add_observation_icon"
+            android:padding="50dp"
+            android:gravity="center"
+            android:textColorHint="@color/dark_green"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="50dp"
+           />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="10dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_orange"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/nav_menu" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FeatherFinder"
+        tools:targetApi="31">
+        <activity
+            android:name=".randombirdgenerator"
+            android:exported="false" />
+        <activity
+            android:name=".MyFavouriteBirds"
+            android:label="My Favourite Birds"
+           >
+        </activity>
+        <!-- for profile image -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <activity
+            android:name=".BirdGuideLocation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Full_Observations"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SouthAfricanBirdGuide"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddObservation"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDI8N7HDSNKesVFs6wT5LE60AZW4qpw6ck" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".messagebox"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyDialogFragment"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcome"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewPagerAdapter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ObservationDetail"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Guide"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FeatherFinder"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="20dp"
+    android:backgroundTint="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/birdImg1"
+            android:layout_width="83dp"
+            android:layout_height="91dp"
+            app:civ_border_width="2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/birddefault"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/myComNametxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Blue-and-white flycatcher"
+                android:textColor="@color/dark_green"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/mySciNametxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cyanoptila cyanomelana"
+                android:textColor="@color/sage_green"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/myDatetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="30 August 2023"
+                    android:textColor="@color/dark_green"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/myTimetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11h30"
+                    android:textColor="@color/dark_green"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/myLocationtxt"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sage_green"
+                android:textSize="13dp"
+                android:text="IIE Varsity College, Sandton" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

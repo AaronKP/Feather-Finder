@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="Rosebank Gradens"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:text="15 KM"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/coordinates"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:text="Latitude and Longitude"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textColor="@color/black"
+        android:layout_marginEnd="5dp"
+        style="@style/Widget.App.Button"
+         />
+</LinearLayout>

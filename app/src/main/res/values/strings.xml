@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FeatherFinder</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="forgotPassword"><a href="https://www.google.org">Forgot password?</a></string>
+    <string name="signUp"><u>Don\'t have an account yet? Sign-up here</u></string>
+    <string name="signIn"><u>Already have an account? Sign-in here</u></string>
+    <string name="TCS"><a href="@layout/sign_up">Terms of Use</a></string>
+
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string-array name="dateFormats">
+        <item>DD/MM/YYYY</item>
+        <item>DD-MM-YYYY</item>
+        <item>MM/DD/YYYY</item>
+        <item>MM-DD-YYYY</item>
+        <item>YYYY-MM-DD</item>
+        <item>DD.MM.YYYY</item>
+    </string-array>
+
+    //map
+
+    <string name="select_range_prompt">Select Range</string>
+    <string name="google_maps_key">AIzaSyDI8N7HDSNKesVFs6wT5LE60AZW4qpw6ck</string>
+
+
+</resources>

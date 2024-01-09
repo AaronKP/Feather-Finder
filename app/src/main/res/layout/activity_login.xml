@@ -1,0 +1,152 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".Login">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/loginbg"
+        android:layout_height="match_parent">
+
+        <!-- CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="337dp"
+            app:cardCornerRadius="40dp"
+            android:layout_height="449dp"
+            android:background="#33FFFFFF"
+            app:cardBackgroundColor="@color/dark_cream"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5">
+
+            <LinearLayout
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    app:boxStrokeColor="@android:color/white"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="320"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/white"
+                    app:startIconDrawable="@drawable/email_icon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/emailtxt"
+                        android:layout_width="289dp"
+                        android:layout_height="wrap_content"
+                        android:maxLength="320" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    app:boxStrokeColor="@android:color/white"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="20"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/white"
+                    app:endIconMode="password_toggle"
+                    app:startIconDrawable="@drawable/password_icon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passwordtxt"
+                        android:layout_width="289dp"
+                        android:inputType="textPassword"
+                        android:layout_height="wrap_content"
+                        android:maxLength="20" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/loginbtn"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="@color/light_orange"
+                    android:text="Login"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/forgotpasswordtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorLink="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/forgotPassword"
+                    android:textSize="13dp" />
+
+                <Button
+                    android:id="@+id/Signupbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textSize="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="70dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:text="@string/signUp"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="164dp"
+        android:layout_height="183dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/birds_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Image View -->
+    <ImageView
+        android:id="@+id/overlayImage"
+        android:layout_width="434dp"
+        android:layout_height="197dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cloud_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //map hotspot radius options
+    <string-array name="distance_ranges">
+        <item>10 km</item>
+        <item>20 km</item>
+        <item>30 km</item>
+        <item>40 km</item>
+        <item>50 km</item>
+        <item>60 km</item>
+        <item>70 km</item>
+    </string-array>
+
+    <array name="range_options">
+        <item>10 km</item>
+        <item>20 km</item>
+        <item>30 km</item>
+        <item>40 km</item>
+        <item>50 km</item>
+
+        <!-- Add other range options as needed -->
+    </array>
+</resources>

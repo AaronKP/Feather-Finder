@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_green"
+    tools:context=".AddObservation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/light_orange"
+                android:text="Add An Observation"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/comnametxt"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:text="Common Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/scinametxt"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:text="Scientific Name" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="@color/dark_grey"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Address:"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <fragment
+                        android:id="@+id/fragment"
+                        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dateview"
+                    android:ems="10"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:text="22 June 2023"
+                    android:inputType="time" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/date_fab"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btnshape"
+                    android:text="Add Date"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:drawableLeft="@drawable/calendar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/timeview"
+                    android:ems="10"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:text="11: 30 am"
+                    android:inputType="time" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/time_fab"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/btnshape"
+                    android:drawableLeft="@drawable/time"
+                    android:onClick="showTimePickerDialog"
+                    android:padding="10dp"
+                    android:text="Add Time"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_image"
+                android:layout_width="184dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btnshape"
+                android:contentDescription="Add Image"
+                android:drawableLeft="@drawable/camera_icon"
+                android:padding="10dp"
+                android:text="Add Image"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageView
+                android:id="@+id/obsimage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/birddefault" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_orange"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:menu="@menu/nav_menu" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/sage_green"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/save_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

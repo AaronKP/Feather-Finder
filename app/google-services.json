@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "282985367839",
+    "project_id": "featherfinder-0",
+    "storage_bucket": "featherfinder-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282985367839:android:f786e63be325a7b445882a",
+        "android_client_info": {
+          "package_name": "com.varsitycollege.featherfinder.opsc7312"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZd181vM8yp4AKNHn6PiOqUZA6ekufYl4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
